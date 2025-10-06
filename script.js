@@ -565,3 +565,16 @@ document.querySelector('.again').addEventListener('click', function () {
 
   document.querySelector('.guess').value = ''; // Clearing he Input Value
 });
+
+// MODAL
+// CLOSE BUTTON
+document.querySelector('.close-modal').addEventListener('click', function () {
+  document.querySelector('.modal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+});
+
+// OPEN BUTTON
+document.querySelector('.show-modal').addEventListener('click', function () {
+  document.querySelector('.modal').classList.remove('hidden');
+  document.querySelector('.overlay').classList.remove('hidden');
+});
